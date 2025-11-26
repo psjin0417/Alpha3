@@ -1,0 +1,8 @@
+prefix=/home/autonav/alpha3/devel
+
+Name: package
+Description: Description of package
+Version: 0.0.1
+Cflags: -I/home/autonav/alpha3/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs message_runtime morai_msgs tf2 tf2_ros tf2_geometry_msgs

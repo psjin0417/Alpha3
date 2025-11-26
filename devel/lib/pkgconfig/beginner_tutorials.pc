@@ -1,0 +1,8 @@
+prefix=/home/autonav/alpha3/devel
+
+Name: beginner_tutorials
+Description: Description of beginner_tutorials
+Version: 0.0.0
+Cflags: -I/home/autonav/alpha3/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

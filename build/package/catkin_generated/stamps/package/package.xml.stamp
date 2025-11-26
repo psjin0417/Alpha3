@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>package</name>
+  <version>0.0.1</version>
+  <description>ROS 패키지 설명</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- CMakeLists.txt find_package에 적은거 모두 명시 -->
+  <!-- <build_depend>example</build_depend>
+  <build_export_depend>example</build_export_depend>
+  <exec_depend>example</exec_depend> -->
+
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  
+  <build_depend>rospy</build_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <build_depend>morai_msgs</build_depend>
+  <exec_depend>morai_msgs</exec_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <exec_depend>tf2</exec_depend>  
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <export>
+  </export>
+</package>
