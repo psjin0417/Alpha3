@@ -1,4 +1,4 @@
-prefix=/home/autonav/alpha3/install
+prefix=/home/autonav/Alpha3/install
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials

@@ -67,14 +67,14 @@ set(package_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(package_SOURCE_PREFIX /home/autonav/alpha3/src/package)
-  set(package_DEVEL_PREFIX /home/autonav/alpha3/devel)
+  set(package_SOURCE_PREFIX /home/autonav/Alpha3/src/package)
+  set(package_DEVEL_PREFIX /home/autonav/Alpha3/devel)
   set(package_INSTALL_PREFIX "")
   set(package_PREFIX ${package_DEVEL_PREFIX})
 else()
   set(package_SOURCE_PREFIX "")
   set(package_DEVEL_PREFIX "")
-  set(package_INSTALL_PREFIX /home/autonav/alpha3/install)
+  set(package_INSTALL_PREFIX /home/autonav/Alpha3/install)
   set(package_PREFIX ${package_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/autonav/alpha3/install/lib;/home/autonav/alpha3/devel/lib;/home/autonav/Desktop/KM/devel/lib;/home/autonav/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/autonav/Alpha3/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
